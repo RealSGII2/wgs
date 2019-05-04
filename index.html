@@ -49,7 +49,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick='login()'>Log In <div class="spinner-border-sm text-light" role="status" id='load' hidden>
+                <button type="button" class="btn btn-primary" onclick='login()'>Log In <div class="spinner-border spinner-border-sm text-light" role="status" id='load' hidden>
                   <span class="sr-only">Loading...</span></div>
                 </button>
               </div>
@@ -78,7 +78,7 @@
           
           setTimeout(function() {
             get('load').hidden = true
-            window.location.href = '/premium'
+            window.location.href = '/wgs/premium'
           }, 3500)
         } else {
           get('err').innerHTML = 'That is not the correct password. Try again?'
